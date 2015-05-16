@@ -78,6 +78,7 @@ void doSomething(pid_t pid, char *name)
 	}
 #else 
 	chdir("/root/liftdisplaypanel2");
+	system("uptime >> errorLog.txt");
 	system(*argv);
 #endif	
 }
